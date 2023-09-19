@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_app/style/themes/dark.dart';
 import 'package:web_app/style/themes/light.dart';
-import 'package:web_app/views/home/main.dart';
+import 'package:web_app/views/chat/main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       darkTheme: customDarkTheme(),
       theme: customLightTheme(),
       themeMode: ThemeMode.dark,
-      home: const HomeView(),
+      home: const SafeArea(child: ChatView()),
     );
   }
 }
